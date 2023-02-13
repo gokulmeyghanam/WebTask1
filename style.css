@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .item {
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    transition:transform 2s ease;
+  }
+  
+  
+
+  .container .item:nth-of-type(even){
+    transform: translatex(624%);
+  }
+
+  .container .item:nth-of-type(odd){
+    transform: translatex(-624%);
+  }
+
+
+  .container.show-item .item:nth-of-type(even){
+    transform: translatex(0%);
+  } 
+
+  .container.show-item .item:nth-of-type(odd){
+    transform: translatex(0%);
+  } 
+
+  
+
